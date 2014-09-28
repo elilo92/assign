@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Software Engineering Class</title>
+</head>
+
+<body>
+<h2>Time Card Application</h2>
+<p>Please enter the hours worked for a specific day:</p>
+
+<form action="insert.php" method="post">
+    Employee ID: <input type="number" name="employeeID">
+    Date: <input type="date" name="date">
+    Hours: <input type="number" name="hours">
+    <input type="submit">
+</form>
+
+<p>Review employee time:</p>
+<form action="retrieve.php" method="post">
+    Employee ID: <input type="number" name="employeeID2">
+    Start Date: <input type="date" name="sDate">
+    End Date: <input type="date" name="eDate">
+    <input type="submit">
+</form>
+
+<p>Delete records for an employee:</p>
+<form action="delete.php" method="post">
+    Employee ID: <input type="number" name="employeeID">
+    <input type="submit">
+</form>
+
+</body>
+</html>
